@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Double Slider Login / Registration Form</title>
+  <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" id="container">
+    <div class="form-container register-container">
+      <form action="../php/src/register.php" method="post" >
+        <h1>Registrate Aqui</h1>
+        <input required type="text" name="username" id="username" placeholder="Nombre de usuario">
+        <input required type="email" name="email" id="email" placeholder="Correo">
+        <input required type="password" name="password" id="password"  placeholder="Contraseña">
+        <input required type="password" name="confirm_password" id="confirm_password" placeholder="Confirmar contraseña">
+        <button type="submit" value="Registrar">Crear</button>
+        <span>Iniciar con otra cuenta</span>
+        <div class="social-container">
+          <a href="#" class="social"><i class="lni lni-facebook-fill"></i></a>
+          <a href="#" class="social"><i class="lni lni-google"></i></a>
+          <a href="#" class="social"><i class="lni lni-linkedin-original"></i></a>
+        </div>
+      </form>
+    </div>
+    <div class="form-container login-container">
+      <form action="../php/src/login.php" method="post">
+        <h1>Iniciar Sesion </h1>
+        <input required type="text" name="username" placeholder="Nombre de Usuario">
+        <input required type="password" name="password" placeholder="Contraseña">
+        <div class="content">
+          <div class="checkbox">
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label>Recuerdame</label>
+          </div>
+          <div class="pass-link">
+            <a href="#">| Olvidaste tu contraseña? |</a>
+          </div>
+        </div>
+        <button type="submit" value="Iniciar Sesion">Entrar</button>
+        <span>Iniciar con otra cuenta</span>
+        <div class="social-container">
+          <a href="#" class="social"><i class="lni lni-facebook-fill"></i></a>
+          <a href="#" class="social"><i class="lni lni-google"></i></a>
+          <a href="#" class="social"><i class="lni lni-linkedin-original"></i></a>
+        </div>
+      </form>
+    </div>
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <h1 class="title">Hola <br> amigos</h1>
+          <p>Si ya tienes una cuenta, inicia sesion aqui y diviertete</p>
+          <button class="ghost" id="login">Iniciar Sesion
+            <i class="lni lni-arrow-left login"></i>
+          </button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <h1 class="title">Comienza tu <br> aventura ahora</h1>
+          <p>Si aun no tienes una cuenta, unete a nosotros y comienza tu aventura</p>
+          <button class="ghost" id="register">Registrarme
+            <i class="lni lni-arrow-right register"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
